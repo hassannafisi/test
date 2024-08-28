@@ -1,0 +1,16 @@
+<p>login works!</p>
+<h1>{{loginForm.controls['userName'].value }}</h1>
+
+
+@if(isVisible){
+<form [formGroup]="loginForm" #loginFormControl="ngForm">
+    <div class="col">
+        <p class="input-label">
+            user name
+        </p>
+        <input formControlName="userName">
+    </div>
+</form>
+} @else if(!isVisible) {
+<h1>hell o</h1>
+}
